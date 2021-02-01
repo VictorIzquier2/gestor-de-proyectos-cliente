@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const clienteAxios = axios.create({
-    baseURL: 'https://gestor-de-proyectos-servidor.herokuapp.com/' 
+    baseURL : process.env.REACT_APP_BACKEND_URL
 });
 
 export default clienteAxios;
